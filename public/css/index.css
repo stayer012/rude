@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+body{
+    background-size: cover;
+    background-position: top;
+    background-image: url(../img/background.png);
+}
+.header-logo{
+    font-size: 26px;
+    margin: 26px -2% 0% 13%;
+    font-family: 'Patrick Hand', cursive;
+}
+.header-logo a{
+    color: white;
+}
+.header {
+    display: inline-flex;
+    width: 100%;
+}
+.taskbar{
+    width: 36%;
+    margin: 25px 0% 0% 9%;
+}
+.taskbar ul li{
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2% 5%;
+}
+.taskbar ul a li{
+    color: white;
+}
+.header-sign-up-btn button{
+    margin: 14% 0% 0% -58%;
+    font-size: 14px;
+    padding: 9px 50px;
+    border-radius: 7px;
+    border-style: none;
+    background-color: #0da2dd;
+    box-shadow: 0px 0px 20px -6px #0da2dd;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+}
+.main-left{
+    width: 41%;
+    margin: 16% 0% 0% 9%;
+}
+.main-left h1{
+    font-size: 36px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+}
+.main-left p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aeaeae;
+    margin: 3% 1%;
+    margin-bottom: 5%;
+}
+.main-left button{
+    font-size: 17px;
+    padding: 10px 36px;
+    background-color: #0da2dd;
+    box-shadow: 2px 4px 17px 1px rgb(0 123 232 / 30%);
+    border-style: none;
+    color: #2d2828;
+    margin-left: 1%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-right{
+    width: 19%;
+    margin: 8% 0% 0% 25%;
+}
+.main-right h1{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.main-right h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b0acacad;
+}
+.main-right form input {
+    width: 100%;
+    padding: 7px;
+    margin: 8px 0px;
+    font-size: 13px;
+    background-color: transparent;
+    border: 3px solid #ccc;
+    color: white;
+    display: block;
+    border-radius: 2px;
+}
+
+.main-right form input[type =submit]{
+    width: 107%;
+    cursor: pointer;
+    border: 3px solid #0da2dd;
+}
+.main-right form input[type =submit]:hover{
+    background-color: #2eb5eb;
+    color: black;
+}
+
+.sign-up-window{
+    width: 23%;
+    background-color: #2e3c42;
+    position: absolute;
+    margin: 11% 73%;
+    height: 39%;
+    display: none;
+}
+.sign-up-window h1{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.sign-up-window input{
+    width: 95%;
+    padding: 7px;
+    margin: 21px 0px;
+    font-size: 13px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    display: block;
+    border-radius: 2px;
+}
+.sign-up-window input[type =submit]{
+    width: 100%;
+    cursor: pointer;
+}
+.sign-up-window input[type =submit]:hover{
+    background-color: white;
+    color: black;
+}

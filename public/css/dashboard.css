@@ -1,0 +1,43 @@
+*{color: #e2e2e2;font-family: system-ui;}
+.glow-dashboard{
+    background-color: #0da2dd;
+}
+
+.rightside-main-contant {
+    width: 47%;
+    margin: -1% 0% -5px 0%;
+    background-color: #293a3f;
+    border-radius: 5px;
+    padding: 1% 2%;
+    height: 635px;
+}
+
+.leftside-main-contant {
+    width: 53%;
+    margin: -1% 0% 0px 0px;
+    background-color: #4b585e;
+    border-radius: 5px;
+    height: 635px;
+}
+.weekly-analysis{
+    height: 47%;
+    background-color: #293a3f;
+    margin: 1%;
+    border-radius: 5px;
+}
+.weekly-graph{
+    margin: 1%;
+    height: 51%;
+    border-radius: 5px;
+    background-color: #293a3f;
+}
+
+
+.recent-trade-background{
+    width: 100%;
+}
+
+
+.recent-trade-background tr td{
+    padding: 3px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head")%>
+
+    <title>RudeTrader</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style></style>
+  </head>
+
+  <body>
+    <!-- this is taskbar which includes logo, dashboard,chalander -->
+    <%- include("partials/taskbar")%>
+
+    <!-- add trade button -->
+    <%- include("partials/add-trade")%>
+
+    <!--main web page -->
+    <div class="main" id="main">
+      <div class="main-header">
+        <div class="page-name">Dashboard</div>
+        <div class="color-addtrade-button">
+          <button class="header-button" id="add-trade-button">Add Trade</button>
+        </div>
+
+        <!-- profile dropdown-menu -->
+        <%- include("partials/profile-dropdown-menu")%>
+      </div>
+
+      <!--main contant-->
+      <div class="main-contant">
+        <div class="leftside-main-contant">
+          <div class="weekly-analysis">
+            <canvas id="weekly_chart"></canvas>
+          </div>
+          
+          <div class="weekly-graph">
+            <canvas id="monthly_chart"></canvas>
+
+          </div>
+        </div>
+
+        <div class="rightside-main-contant" id="txt-hint">
+          <a href="/trades">
+            <h1 style="font-size: 30px;margin: 1% 0% 2% -1%; ">Recent Trades</h1>
+
+          </a>
+
+          <h1></h1>
+          <table class="recent-trade-background">
+            <tr style="font-weight: bolder; font-size: 20px">
+              <td>Symbol</td>
+              <td>Buy/Sell</td>
+              <td>Market</td>
+              <td>Quantity</td>
+              <td>PNL</td>
+            </tr>
+
+            <% rult.forEach((row)=> { %>
+            <tr>
+              <td><%= row.Instrument %></td>
+              <td><%= row.action %></td>
+              <td><%= row.market %></td>
+              <td><%= row.quantity %></td>
+              <% if (row.action==="BUY" ) { %> 
+                <% if (row.exit_price - row.entry_price>=0) { %>
+                <td class="green_color"> <%= row.pnl %> INR </td>
+              <% } else { %>
+              <td class="red_color">
+                <%= row.pnl%> INR
+              </td>
+              <% } %> <% } else { %> <% if (row.entry_price - row.exit_price>=0)
+              { %>
+
+              <td class="green_color">
+                <%= row.pnl %> INR
+              </td>
+              <% } else { %>
+              <td class="red_color">
+                <%= row.pnl %> INR
+              </td>
+              <% } %> <% } %>
+            </tr>
+            <% }); %>
+
+          </table>
+          
+          
+
+          <div class="recent_trade_row"></div>
+        </div>
+      </div>
+      <!--main contant ends -->
+    </div>
+    <!--main webpage ends-->
+
+    <script src="../js/layout.js"></script>
+    <script src="../js/chart.js"></script>
+  </body>
+</html>

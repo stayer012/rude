@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head")%>
+    <link rel="stylesheet" href="../css/profile.css">
+    
+    <title>RudeTrader</title>
+    
+    <style></style>
+  </head>
+
+  <body>
+    <!-- this is taskbar which includes logo, dashboard,chalander -->
+    <%- include("partials/taskbar")%>
+
+    
+    <!-- add trade button -->
+    <%- include("partials/add-trade")%>
+
+    <!--main web page -->
+    <div class="main" id="main">
+      <div class="main-header">
+        <div class="page-name">Account Settings</div>
+        <div class="color-addtrade-button">
+          <button class="header-button" id="add-trade-button">Add Trade</button>
+        </div>
+
+        <!-- profile dropdown-menu -->
+        <%- include("partials/profile-dropdown-menu")%>
+      </div>
+
+      <!--main contant-->
+      <div class="main-contant">
+
+        <div class="main-contant-row">
+            <div class="inline">
+                <h4>Name :  <%= result[0].name %></h4>    
+                <h4>Last Name: </h4>
+            </div>
+            <h4>Email Address :  <%= result[0].email %> </h4>
+            <h4>Country:</h4>
+            <h4>Account currency:</h4>
+            <h4>Timezone:</h4>
+        </div>
+
+        <div class="main-contant-row">
+            <h4>Change Password</h4>
+            <form method="post" action="/change_password" class="change_pass">
+                <input type="text" name="old_pass"  placeholder="Old Password">
+                <input type="text" name="new_pass" placeholder="New Password">
+                <input type="submit">
+            </form>
+        </div>
+
+        <div class="main-contant-row" style="display: flex;">
+            <button class="delete_account_btn">Delete Account</button>
+        </div>
+        
+      </div>
+      <!--main contant ends -->
+    </div>
+    <!--main webpage ends-->
+
+    <script src="../js/layout.js"></script>
+  </body>
+</html>

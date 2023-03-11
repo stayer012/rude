@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head")%>
+    <link rel="stylesheet" href="../css/trades.css" />
+
+    <title>RudeTrader</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <!-- this is taskbar which includes logo, dashboard,chalander -->
+    <%- include("partials/taskbar")%>
+
+    <!-- add trade button -->
+    <%- include("partials/add-trade")%>
+
+    <!--main web page -->
+    <div class="main" id="main">
+      <div class="main-header">
+        <div class="page-name">Trade Report</div>
+        <div class="color-addtrade-button">
+          <button class="header-button" id="add-trade-button">Add Trade</button>
+        </div>
+
+        <!-- profile dropdown-menu -->
+        <%- include("partials/profile-dropdown-menu")%>
+      </div>
+
+      <!--main contant-->
+      <div class="main-contant">
+        <div class="main-contant-row">
+         
+          <table cellspacing="0" cellpadding="0" class="data">
+            <tr style="font-weight: bolder; font-size: 20px">
+              <td>Action</td>
+              <td>Instrument</td>
+              <td>Open DateTime</td>
+              <td>Close DateTime</td>
+              <td>Open Price</td>
+              <td>Close Price</td>
+              <td>Duration</td>
+              <td>Quantity</td>
+              <td>PNL</td>
+            </tr>
+
+            <% rult.forEach((row) => { %>
+
+            <tr class="userdata">
+              <td><%= row.action %></td>
+              <td><%= row.Instrument %></td>
+              <td><%= row.entry_date %></td>
+              <td><%= row.exit_date %></td>
+              <td><%= row.entry_price %></td>
+              <td><%= row.exit_price %></td>
+              <td><%= row.exit_date_time - row.entry_date_time %></td>
+              <td><%= row.quantity %></td>
+
+              <% if (row.action === "BUY") { %> <% if (row.exit_price -
+              row.entry_price>=0) { %>
+
+              <td class="green_color"><%= row.pnl %> INR</td>
+              <% } else { %>
+              <td class="red_color"><%= row.pnl %> INR</td>
+              <% } %> <% } else { %> <% if (row.entry_price - row.exit_price>=0)
+              { %>
+
+              <td class="green_color"><%= row.pnl %> INR</td>
+              <% } else { %>
+              <td class="red_color"><%= row.pnl %> INR</td>
+              <% } %> <% } %>
+              <td> <a href="">
+                <button class="open-window-btn"  style="font-size: 16px;  background: none;   border: none; cursor: pointer;"  >Details  </button>
+                <a href="/delete_trade/<%= row.trade_id %>">
+                  <span class="material-symbols-outlined" >delete</span>
+                </a>
+              </a>
+                
+                
+              </td>
+              
+              
+            </tr>
+           
+            
+            <% }); %>
+          </table>
+        
+          <%- include("trade_details") %>
+
+        </div>
+      </div>
+      <!--main contant ends -->
+    </div>
+    <!--main webpage ends-->
+
+    <script src="../js/layout.js"></script>
+  </body>
+</html>

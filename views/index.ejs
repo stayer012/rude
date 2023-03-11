@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RudeTrader</title>
+    
+<link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+
+
+
+
+    <div class="sign-up-window" id="sign-up-window">
+      <h1>Sign-up account</h1>
+      <form action="/register" method="post">
+        <input type="text" placeholder="Name" name="userName" required />
+  
+        <input type="text" placeholder="E-mail address" name="emailID" />
+  
+        <input type="password" placeholder="Password" name="password" />
+  
+        <input
+          type="password"
+          placeholder="Confirm your Password"
+          name="cpassword"
+        />
+  
+        <input type="submit" value="Register" />
+      </form>
+    </div>
+
+    
+
+    <div class="header">
+      <div class="header-logo"><a href="#"> RudeTrader </a></div>
+      <div class="taskbar">
+        <ul>
+          <a href="#"><li>HOME</li></a>
+          <a href=""><li>FAQ</li></a>
+          <a href="../html/contact_us.html"><li>CONTACT</li></a>
+        </ul>
+      </div>
+      <div class="header-sign-up-btn">
+        <button onclick="sign_up_window_fun()">Sign-up free</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="main-left">
+        <h1>Welcome to RudeTrader</h1>
+        <p>
+          RudeTrader is online digital trading journal that helps traders to
+          journalize their trade and manage, analyze them. It helps to find your
+          edge and avoid losses. You can try it for free now.
+        </p>
+        <button onclick="sign_up_window_fun()">Create free account ></button>
+      </div>
+
+      <div class="main-right">
+        <h1>Log-in your account ></h1>
+        <h3>
+          Please Sing-in to your account to start Digital Trading Journal.
+        </h3>
+
+        
+        <form action="/login" method="post">
+          <label for="uname"></label>
+          <input
+            type="text"
+            id="login-email"
+            placeholder="Enter Username"
+            name="emailID"
+            required
+          />
+
+          <label for="psw"></label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter Password"
+            name="password"
+            required
+          />
+
+          <input id="login-button" type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head")%>
+    <link rel="stylesheet" href="../css/conatct-us.css">
+    
+    <title>RudeTrader</title>
+    
+    <style></style>
+  </head>
+
+  <body>
+    <!-- this is taskbar which includes logo, dashboard,chalander -->
+    <%- include("partials/taskbar")%>
+
+    
+    <!-- add trade button -->
+    <%- include("partials/add-trade")%>
+
+    <!--main web page -->
+    <div class="main" id="main">
+      <div class="main-header">
+        <div class="page-name">Contact Us</div>
+        <div class="color-addtrade-button">
+          <button class="header-button" id="add-trade-button">Add Trade</button>
+        </div>
+
+        <!-- profile dropdown-menu -->
+        <%- include("partials/profile-dropdown-menu")%>
+      </div>
+
+      <!--main contant-->
+      <div class="main-contant">
+        <div class=main-contant-row>
+          <form action="" method="post">
+            <label for="name">Your Name: </label>
+            <input type="text" name="contact_name">
+
+            <label for="email">Email: </label>
+            <input type="text" name="emailId">
+
+            <label for="message">Message: </label>
+            <!-- <input type="text" name="message"> -->
+            <textarea name="message" id="" cols="30" rows="12"></textarea>
+            <input type="submit" placeholder="Send Consorn">
+          </form>
+        </div>
+
+
+        
+      </div>
+      <!--main contant ends -->
+    </div>
+    <!--main webpage ends-->
+
+    <script src="../js/layout.js"></script>
+  </body>
+</html>

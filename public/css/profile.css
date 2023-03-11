@@ -1,0 +1,65 @@
+
+.main-header{
+    position: fixed;
+}
+
+
+.main-contant{
+    display: inline-block;
+    height: auto;
+}
+.main-contant-row{
+    padding: 1%;
+    padding-left: 3%;
+    background-color: #293a3f;
+    margin: 1%;
+    border-radius: 10px;
+}
+.inline{
+    display: inline-flex;
+    width: 100%;
+}
+.inline h4{
+    width: 50%;
+}
+.main-contant-row h4{
+    padding: 2%;
+}
+.delete_account_btn{
+    
+margin: 1% 0% 1% 2%;
+    
+width: 14%;
+    
+border-color: transparent;
+    
+padding: 10px 0%;
+    
+border-radius: 6px;
+    
+font-size: 17px;
+    
+height: 1%;
+    
+color: black;
+    
+background-color: #ff0000;
+    
+font-weight: 700;
+}
+.change_pass{
+    padding: 0% 0%;
+    margin-bottom: 2%;
+}
+.change_pass input{
+    padding: 9px 3%;
+    border-radius: 3px;
+    color: black;
+    border: none;
+}
+.change_pass input[type=submit]{
+    margin-left: 1%;
+    width: 15%;
+    background-color: #73d8ff;
+    font-size: 15px;
+}

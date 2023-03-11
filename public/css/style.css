@@ -1,0 +1,357 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.main {
+    display: block;
+    width: 85%;
+    position: relative;
+    background-color: #4b585e;
+}
+
+.header-button {
+    color: #ffffff;
+    background-color: #0da2dd;
+    margin: 0px 2px;
+    padding: 6% 25%;
+    font-size: 15px;
+    border: none;
+    font-weight: bolder;
+    border-radius: 14px;
+}
+
+.color-addtrade-button {
+    margin-left: 48%;
+    width: 13%;
+    display: inline-block;
+}
+
+.page-name {
+    color: white;
+    font-size: 19px;
+    margin: 20px 4%;
+    font-weight: bold;
+    width: 23%;
+    display: inline-block;
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+.dropdown-menu ul {
+    margin: 5% 0%;
+}
+
+.dropdown-menu {
+    width: 15%;
+    position: absolute;
+    background-color: #0da2dd;
+    border-radius: 16px;
+    margin-left: 82%;
+    margin-top: 1%;
+    display: none;
+}
+.show-menu{
+    display: block;
+}
+
+.dropdown-menu ul a li   {
+    /* font-family: "Roboto","Arial",sans-serif; */
+    font-size: 15px;
+    color: white;
+    padding: 7px 21px;
+    list-style: none;
+    height: 42px;
+    margin: 2%;
+    font-weight: 600;
+}
+
+.dropdown-menu ul a li:hover {
+    background-color: #5798b6;
+    border-radius: 23px;
+}
+
+
+.taskbar ul li {
+    padding: 6% 0%;
+    margin: 2% 6%;
+    border-radius: 7px;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: inline-flex;
+    position: absolute;
+}
+.taskbar{
+    background-color: #293a3f;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+}
+.main-header{
+    width: 83%;
+    background-color: #293a3f;
+    height: 9%;
+    margin: 1%;
+    display: block;
+    border-radius: 7px;
+}
+
+
+
+
+.main-header{
+    position: fixed;
+}
+.main{margin-left: 15%;width: 100%;height: fit-content;min-height: 100%;}
+.color-addtrade-button{
+    margin-left: 48%;
+}
+
+
+.main-contant{
+    margin-top: 7%;
+}
+
+
+
+
+.main-contant{
+    display: flex;
+    width: 98%;
+    margin-top: 8%;
+    margin-left: 1%;
+    padding-bottom: 1%;
+    height: fit-content;
+}
+.logo{
+    margin: 13% 0%;
+}
+.logo a{
+    font-size: 28px;
+    margin: 0% 2% 1% 13%;
+    font-weight: 1000;
+    font-family: cursive;
+}
+.taskbar ul{
+    margin: auto;
+    margin-top: 16%;
+    list-style: none;
+    width: 100%;
+}
+.taskbar ul a li{
+    font-size: 14px;
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+
+.taskbar ul li a img {
+    margin: -4px 3px;
+    width: 18px;
+}
+.taskbar ul li:hover{
+	color: #8fe0ff;
+}
+
+.add-trade-menu {
+    width: 89%;
+    border: 2px solid black;
+    position: fixed;
+    height: 88%;
+    background-color: #293a3f;
+    overflow: auto;
+    margin: 2% 8%;
+    border-radius: 10px;
+}
+.close-add-trade-menu {
+    display: none;
+    
+}
+.background-blur{
+    
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+.remove-blur{
+    z-index: 2;
+}
+
+
+.close-button {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 2%;
+    opacity: 0.5;
+  }
+  .close-button:hover {
+    opacity: 1;
+  }
+  .close-button:before, .close-button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: #fff;
+  }
+  .close-button:before {
+    transform: rotate(45deg);
+  }
+  .close-button:after {
+    transform: rotate(-45deg);
+  }
+  
+  .green_color{
+    color: #00ed0e;
+    font-weight: bolder;
+}
+.red_color{
+    color: #ff0000;
+    font-weight: bolder;
+}
+
+
+
+
+
+.add-new-trade-heading{
+    color: white;
+    width: 19%;
+    font-family: "Poppins","Roboto","Arial",sans-serif!important;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 1% 2%;
+}
+.add-new-trade-main-contant{
+    margin: 1% 4%;
+    height: 89%;
+}
+
+.rows{
+    width: 27%;
+    display: inline-grid;
+    height: 100%;
+}
+.rows-2{
+    height: 63%;
+}
+.rows-3{
+    width: 45%;
+    height: 100%;
+}
+.rows-3 input{width: 157%;height: 10%;}
+.rows-3 textarea{
+    padding: 2%;
+    resize: none;
+    font-size: 15px;
+}
+.rows label{
+    display: block;
+    margin: 2% -3%;
+    font-size: 15px;
+    font-family: "Poppins","Roboto","Arial",sans-serif!important;
+}
+.rows select{
+    font-size: 14px;
+    width: 83%;
+    padding: 1% 3%;
+    margin-bottom: 3%;
+    border: 1px solid #d9d9d9;
+    color: black;
+    border-radius: 8px;
+}
+.rows select option{
+    font-size: 15px;
+    color: black;
+}
+  
+.add-trade-form-writing-space {
+    font-size: 14px;
+    width: 83%;
+    padding: 2% 3%;
+    margin-bottom: 2%;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    text-transform: uppercase;
+
+}
+.add-trade-form-writing-space-date{
+    padding: 16px 0%;
+    font-size: 15px;
+    font-family: "Poppins","Roboto","Arial",sans-serif!important;
+    color: black;
+}
+  
+
+
+.submit{
+    position: absolute;
+    top: 7px;
+    left: 85%;
+    padding: 7px 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #73d8ff;
+    color: #1a1a1a;
+    font-size: 17px;
+    font-family: "Poppins","Roboto","Arial",sans-serif!important;
+}
+
+
+
+.add-new-trade-main-contant form {
+    height: 100%;
+}
+.taskbar ul a li img{
+    margin: 0% 4% -1% 10%;
+}
+
+
+
+
+
+
+/* slide window css  */
+.window {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88%;
+    margin: 0% 0% 0% 12%;
+    /* height: 102%; */
+    background-color: white;
+    border: 1px solid black;
+}
+
+.show-window {
+    display: block;
+    position: fixed;
+    background-color: #ededed;
+  }
+.close-window-btn{float: left;margin: 1% 1% 0% 1%;padding: 1px 6px;border-radius: 15px;font-size: 16px;}
+.close-window-btn:hover{
+    background-color: #8e8e8e;
+    color: white;
+
+}
+  
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+.white_hover:hover{
+    color: rgb(1, 242, 255);
+}

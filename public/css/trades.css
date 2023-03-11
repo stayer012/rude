@@ -1,0 +1,60 @@
+
+.glow-dashboard{
+    background-color: transparent;
+}
+.glow-trades{
+    background-color: #0da2dd;
+}
+
+
+.main-contant-row div h3{
+    font-size: 15px;
+    display: inline-block;
+    padding: 2%;
+}
+
+.data{
+    width: 100%;
+}
+
+
+.data tr td{
+    padding: 10px;
+    width: 10%;
+    margin: 0px;
+    /* color: #73d8ff; */
+}
+.userdata:hover{
+    border-radius: 150%;
+    background-color:#0da2dd ;
+}
+.window div{
+    
+display: flex;
+    
+/* height: 92%; */
+    
+margin: 2% 0% 0% 0%;
+}
+.window div div{
+    width: 53%;
+    border-radius: 2%;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 0px 0px 10px -6px;
+}
+.material-symbols-outlined{
+    float: right;
+}
+.material-symbols-outlined:hover{
+    color: red;
+}
+.main-contant-row{
+    padding: 1%;
+    padding-left: 3%;
+    width: 100%;
+    background-color: #293a3f;
+    margin: 0% 1% 0% 17px;
+    border-radius: 10px;
+    min-height: 625px;
+}

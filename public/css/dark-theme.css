@@ -1,0 +1,30 @@
+.main-header{
+    background-color: #101010;
+}
+.page-name{
+    color: white;
+}
+.main-contant{
+    background-color: black;
+}
+.taskbar{
+    background-color: #18181f;
+}
+.dropdown-menu{
+    background-color: #18181f;
+}
+.taskbar ul a li{
+    color: white;
+}
+.glow-taskbar{
+    background-color: none;
+}
+.logo a{
+    color: white;
+}
+.main-contant{
+    color: white;
+}
+.dropdown-menu ul li{
+    color: white;
+}
